@@ -1,0 +1,16 @@
+Build.PL
+Changes
+LICENSE
+MANIFEST
+MANIFEST.SKIP
+META.yml
+Makefile.PL
+README
+dist.ini
+lib/Test/TrailingSpace.pm
+t/dogfood.t
+t/lib/File/Find/Object/TreeCreate.pm
+t/object-test.t
+t/release-pod-coverage.t
+t/release-pod-syntax.t
+t/sample-data/PLACEHOLDER
