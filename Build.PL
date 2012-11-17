@@ -21,7 +21,7 @@ my %module_build_args = (
     "Shlomi Fish <shlomif\@cpan.org>"
   ],
   "dist_name" => "Test-TrailingSpace",
-  "dist_version" => "0.0102",
+  "dist_version" => "0.0103",
   "license" => "mit",
   "module_name" => "Test::TrailingSpace",
   "recommends" => {},
