@@ -6,6 +6,7 @@ MANIFEST.SKIP
 META.yml
 Makefile.PL
 README
+cmds.perldb
 dist.ini
 lib/Test/TrailingSpace.pm
 t/dogfood.t
