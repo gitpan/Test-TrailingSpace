@@ -7,7 +7,10 @@ use Module::Build 0.3601;
 
 my %module_build_args = (
   "build_requires" => {
-    "Module::Build" => "0.3601"
+    "File::Path" => 0,
+    "File::Spec" => 0,
+    "Module::Build" => "0.3601",
+    "Test::Builder::Tester" => 0
   },
   "configure_requires" => {
     "ExtUtils::MakeMaker" => "6.30",
@@ -18,7 +21,7 @@ my %module_build_args = (
     "Shlomi Fish <shlomif\@cpan.org>"
   ],
   "dist_name" => "Test-TrailingSpace",
-  "dist_version" => "0.0202",
+  "dist_version" => "0.0203",
   "license" => "mit",
   "module_name" => "Test::TrailingSpace",
   "recommends" => {},
@@ -30,27 +33,9 @@ my %module_build_args = (
     "strict" => 0,
     "warnings" => 0
   },
-  "script_files" => [],
-  "test_requires" => {
-    "File::Path" => 0,
-    "File::Spec" => 0,
-    "Test::Builder::Tester" => 0
-  }
+  "script_files" => []
 );
 
-
-unless ( eval { Module::Build->VERSION(0.4004) } ) {
-  my $tr = delete $module_build_args{test_requires};
-  my $br = $module_build_args{build_requires};
-  for my $mod ( keys %$tr ) {
-    if ( exists $br->{$mod} ) {
-      $br->{$mod} = $tr->{$mod} if $tr->{$mod} > $br->{$mod};
-    }
-    else {
-      $br->{$mod} = $tr->{$mod};
-    }
-  }
-}
 
 my $build = Module::Build->new(%module_build_args);
 
