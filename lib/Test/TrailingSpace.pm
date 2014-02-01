@@ -1,6 +1,9 @@
+package Test::TrailingSpace;
+
 use strict;
 use warnings;
-package Test::TrailingSpace;
+
+use 5.008;
 
 use autodie;
 
@@ -8,7 +11,7 @@ use Test::More;
 
 use File::Find::Object::Rule 0.0301;
 
-our $VERSION = '0.0203';
+our $VERSION = '0.0204';
 
 sub new
 {

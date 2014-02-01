@@ -7,20 +7,26 @@ build_requires:
   File::Spec: 0
   Module::Build: 0.3601
   Test::Builder::Tester: 0
+  lib: 0
 configure_requires:
   ExtUtils::MakeMaker: 6.30
   Module::Build: 0.3601
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 5.009, CPAN::Meta::Converter version 2.132830'
 license: mit
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Test-TrailingSpace
+provides:
+  Test::TrailingSpace:
+    file: lib/Test/TrailingSpace.pm
+    version: 0.0204
 requires:
   File::Find::Object::Rule: 0.0301
   Test::More: 0
   autodie: 0
+  perl: 5.008
   strict: 0
   warnings: 0
-version: 0.0203
+version: 0.0204
